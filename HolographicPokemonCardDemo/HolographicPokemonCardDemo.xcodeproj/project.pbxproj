@@ -20,6 +20,7 @@
 		DA6AE44B29D84E520012B0F6 /* EffectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE44329D84E520012B0F6 /* EffectSettings.swift */; };
 		DA6AE44C29D84E520012B0F6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE44429D84E520012B0F6 /* Pokemon.swift */; };
 		DA6AE44F29D84E730012B0F6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA6AE44E29D84E730012B0F6 /* SDWebImageSwiftUI */; };
+		DA6AE45229D853870012B0F6 /* sparkles.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA6AE45129D853870012B0F6 /* sparkles.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DA6AE44129D84E520012B0F6 /* Shape+fillAndStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shape+fillAndStroke.swift"; sourceTree = "<group>"; };
 		DA6AE44329D84E520012B0F6 /* EffectSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectSettings.swift; sourceTree = "<group>"; };
 		DA6AE44429D84E520012B0F6 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		DA6AE45129D853870012B0F6 /* sparkles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sparkles.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				DA6AE44229D84E520012B0F6 /* Models */,
 				DA6AE43B29D84E520012B0F6 /* CardView */,
 				DA6AE43029D84E320012B0F6 /* Assets.xcassets */,
+				DA6AE45129D853870012B0F6 /* sparkles.gif */,
 				DA6AE43529D84E320012B0F6 /* HolographicPokemonCardDemo.entitlements */,
 				DA6AE43229D84E320012B0F6 /* Preview Content */,
 			);
@@ -183,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6AE45229D853870012B0F6 /* sparkles.gif in Resources */,
 				DA6AE43429D84E320012B0F6 /* Preview Assets.xcassets in Resources */,
 				DA6AE43129D84E320012B0F6 /* Assets.xcassets in Resources */,
 			);

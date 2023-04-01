@@ -16,8 +16,8 @@ extension View {
         self
             .overlay() {
                 if isOn {
-//                    Image("holo")  // Assetsを使用する場合
-                    WebImage(url: URL(string: "https://assets.codepen.io/13471/holo.png"))
+                    Image("holo")  // Assetsを使用する場合
+//                    WebImage(url: URL(string: "https://assets.codepen.io/13471/holo.png"))
                         .resizable()
                         .blendMode(.colorDodge)
                         .opacity(0.3)
@@ -25,8 +25,8 @@ extension View {
             }
             .overlay() {
                 if isOn {
-//                    AnimatedImage(name: "sparkles.gif", isAnimating: .constant(true))  // Resourceの画像を使用する場合
-                    AnimatedImage(url: URL(string: "https://assets.codepen.io/13471/sparkles.gif"))
+                    AnimatedImage(name: "sparkles.gif", isAnimating: .constant(true))  // Resourceの画像を使用する場合
+//                    AnimatedImage(url: URL(string: "https://assets.codepen.io/13471/sparkles.gif"))
                         .resizable()
                         .blendMode(.colorDodge)
                         .opacity(0.3)

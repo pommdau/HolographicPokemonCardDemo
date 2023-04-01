@@ -52,8 +52,8 @@ struct CardView: View {
     @ViewBuilder
     private func cardImage() -> some View {
         if effectSettings.showImage {
-//            pokemon.image  //
-            WebImage(url: pokemon.imageURL)
+            pokemon.image  // Assetsの画像を使用する場合
+//            WebImage(url: pokemon.imageURL)
                 .resizable()
                 .scaledToFit()
         } else {
