@@ -1,11 +1,7 @@
 # HolographicPokemonCardDemo
 ## Overview
 
-https://user-images.githubusercontent.com/29433103/229286720-c80c3996-c464-4913-b2c4-f5ba33ce4460.mov
-
-<br>
-
-https://user-images.githubusercontent.com/29433103/229287116-3adbabba-497e-44b7-b855-e053a5a70897.mov
+https://user-images.githubusercontent.com/29433103/229288544-d9a3fb3c-34a3-4572-b5cf-a4b682ad2135.mov
 
 ## References
 
