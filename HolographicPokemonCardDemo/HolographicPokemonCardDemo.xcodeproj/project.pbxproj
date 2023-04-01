@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA6AE42D29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE42C29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift */; };
+		DA6AE42F29D84E320012B0F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE42E29D84E320012B0F6 /* ContentView.swift */; };
+		DA6AE43129D84E320012B0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6AE43029D84E320012B0F6 /* Assets.xcassets */; };
+		DA6AE43429D84E320012B0F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6AE43329D84E320012B0F6 /* Preview Assets.xcassets */; };
+		DA6AE44529D84E520012B0F6 /* View+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE43C29D84E520012B0F6 /* View+Effect.swift */; };
+		DA6AE44629D84E520012B0F6 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE43D29D84E520012B0F6 /* CardViewModel.swift */; };
+		DA6AE44729D84E520012B0F6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE43E29D84E520012B0F6 /* CardView.swift */; };
+		DA6AE44829D84E520012B0F6 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE43F29D84E520012B0F6 /* Color+hex.swift */; };
+		DA6AE44929D84E520012B0F6 /* CardPlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE44029D84E520012B0F6 /* CardPlaygroundView.swift */; };
+		DA6AE44A29D84E520012B0F6 /* Shape+fillAndStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE44129D84E520012B0F6 /* Shape+fillAndStroke.swift */; };
+		DA6AE44B29D84E520012B0F6 /* EffectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE44329D84E520012B0F6 /* EffectSettings.swift */; };
+		DA6AE44C29D84E520012B0F6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE44429D84E520012B0F6 /* Pokemon.swift */; };
+		DA6AE44F29D84E730012B0F6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA6AE44E29D84E730012B0F6 /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA6AE42929D84E320012B0F6 /* HolographicPokemonCardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolographicPokemonCardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6AE42C29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolographicPokemonCardDemoApp.swift; sourceTree = "<group>"; };
+		DA6AE42E29D84E320012B0F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA6AE43029D84E320012B0F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA6AE43329D84E320012B0F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA6AE43529D84E320012B0F6 /* HolographicPokemonCardDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HolographicPokemonCardDemo.entitlements; sourceTree = "<group>"; };
+		DA6AE43C29D84E520012B0F6 /* View+Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Effect.swift"; sourceTree = "<group>"; };
+		DA6AE43D29D84E520012B0F6 /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		DA6AE43E29D84E520012B0F6 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DA6AE43F29D84E520012B0F6 /* Color+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
+		DA6AE44029D84E520012B0F6 /* CardPlaygroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPlaygroundView.swift; sourceTree = "<group>"; };
+		DA6AE44129D84E520012B0F6 /* Shape+fillAndStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shape+fillAndStroke.swift"; sourceTree = "<group>"; };
+		DA6AE44329D84E520012B0F6 /* EffectSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectSettings.swift; sourceTree = "<group>"; };
+		DA6AE44429D84E520012B0F6 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA6AE42629D84E320012B0F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6AE44F29D84E730012B0F6 /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA6AE42029D84E320012B0F6 = {
+			isa = PBXGroup;
+			children = (
+				DA6AE42B29D84E320012B0F6 /* HolographicPokemonCardDemo */,
+				DA6AE42A29D84E320012B0F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA6AE42A29D84E320012B0F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AE42929D84E320012B0F6 /* HolographicPokemonCardDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA6AE42B29D84E320012B0F6 /* HolographicPokemonCardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AE42C29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift */,
+				DA6AE42E29D84E320012B0F6 /* ContentView.swift */,
+				DA6AE44029D84E520012B0F6 /* CardPlaygroundView.swift */,
+				DA6AE45029D84EC10012B0F6 /* Extensions */,
+				DA6AE44229D84E520012B0F6 /* Models */,
+				DA6AE43B29D84E520012B0F6 /* CardView */,
+				DA6AE43029D84E320012B0F6 /* Assets.xcassets */,
+				DA6AE43529D84E320012B0F6 /* HolographicPokemonCardDemo.entitlements */,
+				DA6AE43229D84E320012B0F6 /* Preview Content */,
+			);
+			path = HolographicPokemonCardDemo;
+			sourceTree = "<group>";
+		};
+		DA6AE43229D84E320012B0F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AE43329D84E320012B0F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA6AE43B29D84E520012B0F6 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AE43D29D84E520012B0F6 /* CardViewModel.swift */,
+				DA6AE43E29D84E520012B0F6 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		DA6AE44229D84E520012B0F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AE44429D84E520012B0F6 /* Pokemon.swift */,
+				DA6AE44329D84E520012B0F6 /* EffectSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA6AE45029D84EC10012B0F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AE43C29D84E520012B0F6 /* View+Effect.swift */,
+				DA6AE43F29D84E520012B0F6 /* Color+hex.swift */,
+				DA6AE44129D84E520012B0F6 /* Shape+fillAndStroke.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA6AE42829D84E320012B0F6 /* HolographicPokemonCardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA6AE43829D84E320012B0F6 /* Build configuration list for PBXNativeTarget "HolographicPokemonCardDemo" */;
+			buildPhases = (
+				DA6AE42529D84E320012B0F6 /* Sources */,
+				DA6AE42629D84E320012B0F6 /* Frameworks */,
+				DA6AE42729D84E320012B0F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HolographicPokemonCardDemo;
+			packageProductDependencies = (
+				DA6AE44E29D84E730012B0F6 /* SDWebImageSwiftUI */,
+			);
+			productName = HolographicPokemonCardDemo;
+			productReference = DA6AE42929D84E320012B0F6 /* HolographicPokemonCardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA6AE42129D84E320012B0F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DA6AE42829D84E320012B0F6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = DA6AE42429D84E320012B0F6 /* Build configuration list for PBXProject "HolographicPokemonCardDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA6AE42029D84E320012B0F6;
+			packageReferences = (
+				DA6AE44D29D84E730012B0F6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = DA6AE42A29D84E320012B0F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA6AE42829D84E320012B0F6 /* HolographicPokemonCardDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA6AE42729D84E320012B0F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6AE43429D84E320012B0F6 /* Preview Assets.xcassets in Resources */,
+				DA6AE43129D84E320012B0F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA6AE42529D84E320012B0F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6AE44629D84E520012B0F6 /* CardViewModel.swift in Sources */,
+				DA6AE42F29D84E320012B0F6 /* ContentView.swift in Sources */,
+				DA6AE44A29D84E520012B0F6 /* Shape+fillAndStroke.swift in Sources */,
+				DA6AE44929D84E520012B0F6 /* CardPlaygroundView.swift in Sources */,
+				DA6AE44529D84E520012B0F6 /* View+Effect.swift in Sources */,
+				DA6AE44C29D84E520012B0F6 /* Pokemon.swift in Sources */,
+				DA6AE44829D84E520012B0F6 /* Color+hex.swift in Sources */,
+				DA6AE44B29D84E520012B0F6 /* EffectSettings.swift in Sources */,
+				DA6AE42D29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift in Sources */,
+				DA6AE44729D84E520012B0F6 /* CardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DA6AE43629D84E320012B0F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA6AE43729D84E320012B0F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DA6AE43929D84E320012B0F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HolographicPokemonCardDemo/HolographicPokemonCardDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HolographicPokemonCardDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = BWMJMJK727;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikeh1024.HolographicPokemonCardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA6AE43A29D84E320012B0F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HolographicPokemonCardDemo/HolographicPokemonCardDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HolographicPokemonCardDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = BWMJMJK727;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikeh1024.HolographicPokemonCardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA6AE42429D84E320012B0F6 /* Build configuration list for PBXProject "HolographicPokemonCardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA6AE43629D84E320012B0F6 /* Debug */,
+				DA6AE43729D84E320012B0F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA6AE43829D84E320012B0F6 /* Build configuration list for PBXNativeTarget "HolographicPokemonCardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA6AE43929D84E320012B0F6 /* Debug */,
+				DA6AE43A29D84E320012B0F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA6AE44D29D84E730012B0F6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA6AE44E29D84E730012B0F6 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA6AE44D29D84E730012B0F6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DA6AE42129D84E320012B0F6 /* Project object */;
+}
