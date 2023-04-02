@@ -21,6 +21,9 @@
 		DA6AE44C29D84E520012B0F6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE44429D84E520012B0F6 /* Pokemon.swift */; };
 		DA6AE44F29D84E730012B0F6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA6AE44E29D84E730012B0F6 /* SDWebImageSwiftUI */; };
 		DA6AE45229D853870012B0F6 /* sparkles.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA6AE45129D853870012B0F6 /* sparkles.gif */; };
+		DAA010C529D9400400EFDBC5 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA010C429D9400400EFDBC5 /* StickerView.swift */; };
+		DAA010C929D949AB00EFDBC5 /* View+reverseMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA010C829D949AB00EFDBC5 /* View+reverseMask.swift */; };
+		DAA010CD29D94CB500EFDBC5 /* StickerMVPBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA010CC29D94CB500EFDBC5 /* StickerMVPBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		DA6AE44329D84E520012B0F6 /* EffectSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectSettings.swift; sourceTree = "<group>"; };
 		DA6AE44429D84E520012B0F6 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		DA6AE45129D853870012B0F6 /* sparkles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sparkles.gif; sourceTree = "<group>"; };
+		DAA010C429D9400400EFDBC5 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		DAA010C829D949AB00EFDBC5 /* View+reverseMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+reverseMask.swift"; sourceTree = "<group>"; };
+		DAA010CC29D94CB500EFDBC5 /* StickerMVPBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerMVPBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 				DA6AE43029D84E320012B0F6 /* Assets.xcassets */,
 				DA6AE45129D853870012B0F6 /* sparkles.gif */,
 				DA6AE43529D84E320012B0F6 /* HolographicPokemonCardDemo.entitlements */,
+				DAA010C329D93FEB00EFDBC5 /* StickerView */,
 				DA6AE43229D84E320012B0F6 /* Preview Content */,
 			);
 			path = HolographicPokemonCardDemo;
@@ -120,6 +127,16 @@
 				DA6AE44129D84E520012B0F6 /* Shape+fillAndStroke.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAA010C329D93FEB00EFDBC5 /* StickerView */ = {
+			isa = PBXGroup;
+			children = (
+				DAA010C429D9400400EFDBC5 /* StickerView.swift */,
+				DAA010CC29D94CB500EFDBC5 /* StickerMVPBackground.swift */,
+				DAA010C829D949AB00EFDBC5 /* View+reverseMask.swift */,
+			);
+			path = StickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +217,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6AE44629D84E520012B0F6 /* CardViewModel.swift in Sources */,
+				DAA010C929D949AB00EFDBC5 /* View+reverseMask.swift in Sources */,
+				DAA010CD29D94CB500EFDBC5 /* StickerMVPBackground.swift in Sources */,
 				DA6AE42F29D84E320012B0F6 /* ContentView.swift in Sources */,
 				DA6AE44A29D84E520012B0F6 /* Shape+fillAndStroke.swift in Sources */,
 				DA6AE44929D84E520012B0F6 /* CardPlaygroundView.swift in Sources */,
 				DA6AE44529D84E520012B0F6 /* View+Effect.swift in Sources */,
+				DAA010C529D9400400EFDBC5 /* StickerView.swift in Sources */,
 				DA6AE44C29D84E520012B0F6 /* Pokemon.swift in Sources */,
 				DA6AE44829D84E520012B0F6 /* Color+hex.swift in Sources */,
 				DA6AE44B29D84E520012B0F6 /* EffectSettings.swift in Sources */,
