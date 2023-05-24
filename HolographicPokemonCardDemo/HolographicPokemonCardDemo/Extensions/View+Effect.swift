@@ -99,18 +99,18 @@ extension View {
     
     func cardRotationEffect(locationRatioX: Double,
                             locationRatioY: Double,
-                            maxRotarionXDegree: Double = 10,
-                            maxRotarionYDegree: Double = 10) -> some View {
-        let lotationDegrees = CGPoint(x: -maxRotarionXDegree * ((locationRatioX - 0.5) / 0.5),
-                                      y: maxRotarionYDegree  * ((locationRatioY - 0.5) / 0.5))
+                            maxRotarionDegreeX: Double = 10,
+                            maxRotarionDegreeY: Double = 10) -> some View {
+        let rotationDegrees = CGPoint(x: -maxRotarionDegreeX * ((locationRatioX - 0.5) / 0.5),
+                                      y: maxRotarionDegreeY  * ((locationRatioY - 0.5) / 0.5))
 
         /* rotation3DEffectを1つにまとめる方法ある…？ */
         return self
-            .rotation3DEffect(Angle(degrees: lotationDegrees.x),
+            .rotation3DEffect(Angle(degrees: rotationDegrees.x),
                               axis: (x: 0, y: 1.0, z: 0),
                               anchorZ: 0,
                               perspective: 1.0)
-            .rotation3DEffect(Angle(degrees: lotationDegrees.y),
+            .rotation3DEffect(Angle(degrees: rotationDegrees.y),
                               axis: (x: 1.0, y: 0, z: 0),
                               anchorZ: 0,
                               perspective: 1.0)

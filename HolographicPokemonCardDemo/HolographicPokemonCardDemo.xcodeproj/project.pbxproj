@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA02B02E2A1DB4E300F90C8F /* SampleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02B02D2A1DB4E300F90C8F /* SampleCardView.swift */; };
 		DA6AE42D29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE42C29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift */; };
 		DA6AE42F29D84E320012B0F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE42E29D84E320012B0F6 /* ContentView.swift */; };
 		DA6AE43129D84E320012B0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6AE43029D84E320012B0F6 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA02B02D2A1DB4E300F90C8F /* SampleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCardView.swift; sourceTree = "<group>"; };
 		DA6AE42929D84E320012B0F6 /* HolographicPokemonCardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolographicPokemonCardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6AE42C29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolographicPokemonCardDemoApp.swift; sourceTree = "<group>"; };
 		DA6AE42E29D84E320012B0F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		DA02B0282A1DB01F00F90C8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DA6AE42E29D84E320012B0F6 /* ContentView.swift */,
+				DA6AE44029D84E520012B0F6 /* CardPlaygroundView.swift */,
 				DA6AE43E29D84E520012B0F6 /* CardView.swift */,
 			);
 			path = Views;
@@ -68,6 +70,14 @@
 				DA6AE43D29D84E520012B0F6 /* CardViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA02B02A2A1DB4CC00F90C8F /* SampleCodes */ = {
+			isa = PBXGroup;
+			children = (
+				DA02B02D2A1DB4E300F90C8F /* SampleCardView.swift */,
+			);
+			path = SampleCodes;
 			sourceTree = "<group>";
 		};
 		DA6AE42029D84E320012B0F6 = {
@@ -89,12 +99,13 @@
 		DA6AE42B29D84E320012B0F6 /* HolographicPokemonCardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DA02B02A2A1DB4CC00F90C8F /* SampleCodes */,
 				DA6AE45029D84EC10012B0F6 /* Extensions */,
 				DA6AE44229D84E520012B0F6 /* Models */,
 				DA02B0282A1DB01F00F90C8F /* Views */,
 				DA02B0292A1DB02700F90C8F /* ViewModels */,
 				DA6AE42C29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift */,
-				DA6AE44029D84E520012B0F6 /* CardPlaygroundView.swift */,
+				DA6AE42E29D84E320012B0F6 /* ContentView.swift */,
 				DA6AE43029D84E320012B0F6 /* Assets.xcassets */,
 				DA6AE45129D853870012B0F6 /* sparkles.gif */,
 				DA6AE43529D84E320012B0F6 /* HolographicPokemonCardDemo.entitlements */,
@@ -210,6 +221,7 @@
 				DA6AE44629D84E520012B0F6 /* CardViewModel.swift in Sources */,
 				DA6AE42F29D84E320012B0F6 /* ContentView.swift in Sources */,
 				DA6AE44A29D84E520012B0F6 /* Shape+fillAndStroke.swift in Sources */,
+				DA02B02E2A1DB4E300F90C8F /* SampleCardView.swift in Sources */,
 				DA6AE44929D84E520012B0F6 /* CardPlaygroundView.swift in Sources */,
 				DA6AE44529D84E520012B0F6 /* View+Effect.swift in Sources */,
 				DA6AE44C29D84E520012B0F6 /* Pokemon.swift in Sources */,
