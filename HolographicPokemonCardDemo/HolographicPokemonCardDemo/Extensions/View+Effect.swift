@@ -97,7 +97,7 @@ extension View {
             }
     }
     
-    func cardRorationEffect(locationRatioX: Double,
+    func cardRotationEffect(locationRatioX: Double,
                             locationRatioY: Double,
                             maxRotarionXDegree: Double = 10,
                             maxRotarionYDegree: Double = 10) -> some View {

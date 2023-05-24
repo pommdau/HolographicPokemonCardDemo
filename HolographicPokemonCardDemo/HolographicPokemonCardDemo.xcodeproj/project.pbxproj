@@ -53,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA02B0282A1DB01F00F90C8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AE42E29D84E320012B0F6 /* ContentView.swift */,
+				DA6AE43E29D84E520012B0F6 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA02B0292A1DB02700F90C8F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AE43D29D84E520012B0F6 /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		DA6AE42029D84E320012B0F6 = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +89,12 @@
 		DA6AE42B29D84E320012B0F6 /* HolographicPokemonCardDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DA6AE42C29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift */,
-				DA6AE42E29D84E320012B0F6 /* ContentView.swift */,
-				DA6AE44029D84E520012B0F6 /* CardPlaygroundView.swift */,
 				DA6AE45029D84EC10012B0F6 /* Extensions */,
 				DA6AE44229D84E520012B0F6 /* Models */,
-				DA6AE43B29D84E520012B0F6 /* CardView */,
+				DA02B0282A1DB01F00F90C8F /* Views */,
+				DA02B0292A1DB02700F90C8F /* ViewModels */,
+				DA6AE42C29D84E320012B0F6 /* HolographicPokemonCardDemoApp.swift */,
+				DA6AE44029D84E520012B0F6 /* CardPlaygroundView.swift */,
 				DA6AE43029D84E320012B0F6 /* Assets.xcassets */,
 				DA6AE45129D853870012B0F6 /* sparkles.gif */,
 				DA6AE43529D84E320012B0F6 /* HolographicPokemonCardDemo.entitlements */,
@@ -94,15 +111,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DA6AE43B29D84E520012B0F6 /* CardView */ = {
-			isa = PBXGroup;
-			children = (
-				DA6AE43D29D84E520012B0F6 /* CardViewModel.swift */,
-				DA6AE43E29D84E520012B0F6 /* CardView.swift */,
-			);
-			path = CardView;
-			sourceTree = "<group>";
-		};
 		DA6AE44229D84E520012B0F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,9 +123,9 @@
 		DA6AE45029D84EC10012B0F6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DA6AE43C29D84E520012B0F6 /* View+Effect.swift */,
 				DA6AE43F29D84E520012B0F6 /* Color+hex.swift */,
 				DA6AE44129D84E520012B0F6 /* Shape+fillAndStroke.swift */,
+				DA6AE43C29D84E520012B0F6 /* View+Effect.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

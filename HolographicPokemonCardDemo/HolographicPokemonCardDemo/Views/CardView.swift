@@ -17,9 +17,9 @@ struct CardView: View {
     var body: some View {
         
         cardImage()
-            .aspectRatio(CardViewModel.imageRatio, contentMode: .fit)
-        
-            // hover時に有効にする効果
+            .aspectRatio(CardViewModel.imageAspectRatio, contentMode: .fit)
+
+            // hover時に常に有効にする効果
             .brightness(viewModel.isHovering ? 0.05 : 0)
             .contrast(viewModel.isHovering ? 1.3 : 1.0)
         
@@ -34,6 +34,7 @@ struct CardView: View {
             .clipShape(
                 RoundedRectangle(cornerRadius: 20)
             )
+        
             .onContinuousHover(coordinateSpace: .local) { phase in
                 viewModel.handleOnContinuousHover(phase: phase)
             }
@@ -46,7 +47,8 @@ struct CardView: View {
                         }
                 }
             )
-            .cardRorationEffect(locationRatioX: viewModel.hoverLocationRatio.x, locationRatioY: viewModel.hoverLocationRatio.y)
+            .cardRotationEffect(locationRatioX: viewModel.hoverLocationRatio.x,
+                                locationRatioY: viewModel.hoverLocationRatio.y)
     }
     
     @ViewBuilder
