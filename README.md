@@ -1,4 +1,7 @@
 # HolographicPokemonCardDemo
 ## Overview
 
-https://user-images.githubusercontent.com/29433103/229288544-d9a3fb3c-34a3-4572-b5cf-a4b682ad2135.mov
+https://github.com/pommdau/HolographicPokemonCardDemo/assets/29433103/39d5cb42-09b2-471e-be2b-99a74bd28b13
+
+## Blog
+- (TBD)
