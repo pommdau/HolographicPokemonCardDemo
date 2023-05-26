@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        CardPlaygroundView()
-        SampleCardView()
+        CardPlaygroundView()
+            .frame(minWidth: 800, minHeight: 600)
     }
 }
 

@@ -46,8 +46,8 @@ extension View {
             }
     }
     
-    func rainbowHolographicEffect(isOn: Bool = true, locationXRatio: Double) -> some View {
-        let gradientLocationCenter = min(max(locationXRatio, 0.21), 0.79)  // 0.21 ~ 0.79
+    func rainbowHolographicEffect(isOn: Bool = true, locationRatioX: Double) -> some View {
+        let gradientLocationCenter = min(max(locationRatioX, 0.21), 0.79)  // 0.21 ~ 0.79
         let gradient = Gradient(stops: [
             .init(color: .clear, location: 0),
             .init(color: Color(hex: "#ec9bb6"), location: gradientLocationCenter - 0.2),
@@ -72,9 +72,9 @@ extension View {
             }
     }
     
-    func gradientHolographicEffect(isOn: Bool = true, pokemon: Pokemon, locationXRatio: Double) -> some View {
+    func gradientHolographicEffect(isOn: Bool = true, pokemon: Pokemon, locationRatioX: Double) -> some View {
 
-        let gradientLocationCenter = min(max(locationXRatio, 0.11), 0.89)  // 0.11 ~ 0.89
+        let gradientLocationCenter = min(max(locationRatioX, 0.11), 0.89)  // 0.11 ~ 0.89
         let gradient = Gradient(stops: [
             .init(color: .clear, location: 0),
             .init(color: pokemon.gradientColor1, location: gradientLocationCenter - 0.1),

@@ -28,9 +28,9 @@ struct CardView: View {
                              hoverLocationRatio: viewModel.hoverLocationRatio)
             .gradientHolographicEffect(isOn: effectSettings.enableGradientHolographicEffect,
                                        pokemon: pokemon,
-                                       locationXRatio: viewModel.hoverLocationRatio.x)
+                                       locationRatioX: viewModel.hoverLocationRatio.x)
             .rainbowHolographicEffect(isOn: effectSettings.enableRainbowHolographicEffect,
-                                      locationXRatio: viewModel.hoverLocationRatio.x)
+                                      locationRatioX: viewModel.hoverLocationRatio.x)
             .clipShape(
                 RoundedRectangle(cornerRadius: 20)
             )
