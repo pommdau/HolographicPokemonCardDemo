@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Pokemon: Identifiable {
-    let id = UUID()
+struct Pokemon {
+    let uuid = UUID()
     let gradientColor1: Color
     let gradientColor2: Color
     let gradientColor3: Color
@@ -28,6 +28,12 @@ struct Pokemon: Identifiable {
         self.image = image
         self.imageURL = imageURL
     }
+}
+
+// MARK: - Identifiable
+
+extension Pokemon: Identifiable {
+    var id: UUID { uuid }
 }
 
 // MARK: - Sample Data
