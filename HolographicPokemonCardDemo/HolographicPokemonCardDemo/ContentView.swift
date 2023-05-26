@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         CardPlaygroundView()
+            .frame(minWidth: 800, minHeight: 600)
     }
 }
 

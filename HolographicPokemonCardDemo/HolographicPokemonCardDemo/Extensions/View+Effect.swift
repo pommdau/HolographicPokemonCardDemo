@@ -46,8 +46,8 @@ extension View {
             }
     }
     
-    func rainbowHolographicEffect(isOn: Bool = true, locationXRatio: Double) -> some View {
-        let gradientLocationCenter = min(max(locationXRatio, 0.21), 0.79)  // 0.21 ~ 0.79
+    func rainbowHolographicEffect(isOn: Bool = true, locationRatioX: Double) -> some View {
+        let gradientLocationCenter = min(max(locationRatioX, 0.21), 0.79)  // 0.21 ~ 0.79
         let gradient = Gradient(stops: [
             .init(color: .clear, location: 0),
             .init(color: Color(hex: "#ec9bb6"), location: gradientLocationCenter - 0.2),
@@ -72,9 +72,9 @@ extension View {
             }
     }
     
-    func gradientHolographicEffect(isOn: Bool = true, pokemon: Pokemon, locationXRatio: Double) -> some View {
+    func gradientHolographicEffect(isOn: Bool = true, pokemon: Pokemon, locationRatioX: Double) -> some View {
 
-        let gradientLocationCenter = min(max(locationXRatio, 0.11), 0.89)  // 0.11 ~ 0.89
+        let gradientLocationCenter = min(max(locationRatioX, 0.11), 0.89)  // 0.11 ~ 0.89
         let gradient = Gradient(stops: [
             .init(color: .clear, location: 0),
             .init(color: pokemon.gradientColor1, location: gradientLocationCenter - 0.1),
@@ -97,20 +97,20 @@ extension View {
             }
     }
     
-    func cardRorationEffect(locationRatioX: Double,
+    func cardRotationEffect(locationRatioX: Double,
                             locationRatioY: Double,
-                            maxRotarionXDegree: Double = 10,
-                            maxRotarionYDegree: Double = 10) -> some View {
-        let lotationDegrees = CGPoint(x: -maxRotarionXDegree * ((locationRatioX - 0.5) / 0.5),
-                                      y: maxRotarionYDegree  * ((locationRatioY - 0.5) / 0.5))
+                            maxRotarionDegreeX: Double = 10,
+                            maxRotarionDegreeY: Double = 10) -> some View {
+        let rotationDegrees = CGPoint(x: -maxRotarionDegreeX * ((locationRatioX - 0.5) / 0.5),
+                                      y: maxRotarionDegreeY  * ((locationRatioY - 0.5) / 0.5))
 
         /* rotation3DEffectを1つにまとめる方法ある…？ */
         return self
-            .rotation3DEffect(Angle(degrees: lotationDegrees.x),
+            .rotation3DEffect(Angle(degrees: rotationDegrees.x),
                               axis: (x: 0, y: 1.0, z: 0),
                               anchorZ: 0,
                               perspective: 1.0)
-            .rotation3DEffect(Angle(degrees: lotationDegrees.y),
+            .rotation3DEffect(Angle(degrees: rotationDegrees.y),
                               axis: (x: 1.0, y: 0, z: 0),
                               anchorZ: 0,
                               perspective: 1.0)

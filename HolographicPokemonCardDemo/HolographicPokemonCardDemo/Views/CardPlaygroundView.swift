@@ -11,46 +11,54 @@ struct CardPlaygroundView: View {
     
     @StateObject private var effectSettings = EffectSettings()
     @State private var selectedPokemonIndex = 0
-    let pokemons = Pokemon.sampleData
+    private let pokemons = Pokemon.sampleData
     
     var body: some View {
         HStack(alignment: .top, spacing: 100) {
             CardView(pokemon: pokemons[selectedPokemonIndex], effectSettings: effectSettings)
                 .frame(width: 300)
                 .padding(.leading, 80)
-            
-            Grid(verticalSpacing: 8) {
-                GridRow {
-                    Text("Card:")
-                        .gridColumnAlignment(.trailing)
-                    Picker("", selection: $selectedPokemonIndex) {
-                        ForEach(Array(pokemons.enumerated()), id: \.element.id) { index, pokemon in
-                            Text(pokemon.imageURL.deletingPathExtension().lastPathComponent).tag(index)
-                        }
-                    }
-                    .gridColumnAlignment(.leading)
-                }
-                .padding(.bottom, 12)
-                
-                GridRow(alignment: .top) {
-                    Text("Effect:")
-                    HStack(alignment: .top) {
-                        VStack(alignment: .leading) {
-                            checkAllButtons()
-                            .padding(.bottom, 8)
-                            effectSettingsToggleButtons()
-                        }
-                    }
-                    .padding(.leading, 8)
-                }
-            }
-
+            settingsSection()
         }
         .padding()
     }
+}
+
+// MARK: - View Parts
+
+private extension CardPlaygroundView {
     
     @ViewBuilder
-    private func checkAllButtons() -> some View {
+    func settingsSection() -> some View {
+        Grid(verticalSpacing: 8) {
+            GridRow {
+                Text("Card:")
+                    .gridColumnAlignment(.trailing)
+                Picker("", selection: $selectedPokemonIndex) {
+                    ForEach(Array(pokemons.enumerated()), id: \.element.id) { index, pokemon in
+                        Text(pokemon.imageURL.deletingPathExtension().lastPathComponent).tag(index)
+                    }
+                }
+                .gridColumnAlignment(.leading)
+            }
+            .padding(.bottom, 12)
+            
+            GridRow(alignment: .top) {
+                Text("Effect:")
+                HStack(alignment: .top) {
+                    VStack(alignment: .leading) {
+                        checkAllButtons()
+                        .padding(.bottom, 8)
+                        effectSettingsToggleButtons()
+                    }
+                }
+                .padding(.leading, 8)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    func checkAllButtons() -> some View {
         HStack {
             Button("Check All") {
                 effectSettings.updateAll(enable: true)
@@ -62,7 +70,7 @@ struct CardPlaygroundView: View {
     }
     
     @ViewBuilder
-    private func effectSettingsToggleButtons() -> some View {
+    func effectSettingsToggleButtons() -> some View {
         Group {
             Toggle("showImage", isOn: $effectSettings.showImage.animation())
             Toggle("enableSparkleEffect", isOn: $effectSettings.enableSparkleEffect.animation())

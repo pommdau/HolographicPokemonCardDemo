@@ -9,7 +9,7 @@ import SwiftUI
 
 extension CardViewModel {
     static let imageSize = CGSize(width: 734, height: 1024)  // ポケモンカードの画像サイズ: 734*1024
-    static var imageRatio: Double {
+    static var imageAspectRatio: Double {
         imageSize.width / imageSize.height
     }
 }
@@ -41,7 +41,6 @@ class CardViewModel: ObservableObject {
         case .active(let location):
             hoverLocation = location
             isHovering = true
-            print(location)
         case .ended:
             withAnimation {
                 isHovering = false

@@ -18,7 +18,10 @@ struct Pokemon: Identifiable {
     let cardbackImageURL = URL(string: "https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg")
     
     init(gradientColor1: Color = Color(red: 0, green: 231/255, blue: 1),
-         gradientColor2: Color = .blue, gradientColor3: Color = Color(red: 1, green: 0, blue: 231/255), image: Image, imageURL: URL) {
+         gradientColor2: Color = .blue,
+         gradientColor3: Color = Color(red: 1, green: 0, blue: 231/255),
+         image: Image,
+         imageURL: URL) {
         self.gradientColor1 = gradientColor1
         self.gradientColor2 = gradientColor2
         self.gradientColor3 = gradientColor3
@@ -26,6 +29,8 @@ struct Pokemon: Identifiable {
         self.imageURL = imageURL
     }
 }
+
+// MARK: - Sample Data
 
 // refs:
 // https://codepen.io/simeydotme/pen/PrQKgo

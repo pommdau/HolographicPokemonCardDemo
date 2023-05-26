@@ -12,7 +12,7 @@ class EffectSettings: ObservableObject {
     @Published var enableSparkleEffect = true
     @Published var enableHighlightEffect = false
     
-    // 以下はどちらかを選んで使用すると良い
+    // 以下はどちらかを選んで使用する想定
     @Published var enableGradientHolographicEffect = true
     @Published var enableRainbowHolographicEffect = false
     
